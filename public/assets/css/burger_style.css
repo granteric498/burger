@@ -1,24 +1,4 @@
 body {
     text-align: center;
-    background-color: lightsalmon;
-}
-
-#notDevoured {
-    float: left;
-}
-
-#isDevoured {
-    float: left;
-}
-
-#allBurgers {
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-}
-
-#addBurger {
-    position: absolute;
-    top: 65%;
-    left: 40%;
+    background-color: lightsalmon;  
 }
