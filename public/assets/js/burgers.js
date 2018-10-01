@@ -1,6 +1,5 @@
 $(function () {
     $(".devoured-burger").on("click", function (event) {
-        console.log(`I have been clicked`);
         var id = $(this).data("id");
         var devoured = $(this).data("devoured");
 
@@ -13,7 +12,6 @@ $(function () {
             data: devouredState
         }).then(
             function () {
-                console.log(`Burger is ${devoured}`);
                 location.reload();
             }
         );
@@ -32,7 +30,6 @@ $(function () {
             data: newBurger
         }).then(
             function () {
-                console.log(`Burger has been created`);
                 location.reload();
             }
         );
