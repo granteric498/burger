@@ -1,3 +1,6 @@
+use mysql;
+update user set authentication_string=password(''), plugin='mysql_native_password' where user='root';
+
 CREATE DATABASE burgers_db;
 
 USE burgers_db;
