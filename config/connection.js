@@ -8,11 +8,14 @@ if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "root",
-        database: "burgers_db",
-        socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+        password: "1234",
+        database: "burgers_db"
     });
 };
 
-connection.connect();
+connection.connect(function(err) {
+    if (err) {
+        console.error(`Error connecting: ${err.stack}`);
+    } else {console.log(`Connected as id: ${connection.threadId}`)};
+});
 module.exports = connection;
