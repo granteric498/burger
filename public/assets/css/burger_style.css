@@ -2,3 +2,7 @@ body {
     text-align: center;
     background-color: lightsalmon;  
 }
+
+#ghost {
+    opacity: 0;
+}
