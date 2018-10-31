@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+var mysql = require("mysql");
 
 var connection;
 
@@ -18,4 +18,5 @@ connection.connect(function(err) {
         console.error(`Error connecting: ${err.stack}`);
     } else {console.log(`Connected as id: ${connection.threadId}`)};
 });
+
 module.exports = connection;
