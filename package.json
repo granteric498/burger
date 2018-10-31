@@ -2,10 +2,10 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "micro"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0",
-    "micro": "latest"
+    "mysql": "^2.16.0"
   }
 }

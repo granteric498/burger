@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -27,3 +27,5 @@ app.use(routes);
 app.listen(PORT, function () {
   console.log(`Server listening on: http://localhost:${PORT}`);
 });
+
+module.exports = app;
